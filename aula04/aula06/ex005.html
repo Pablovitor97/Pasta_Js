@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PRIMEIROS PASSOS COM O DOM</title>
+    <style>
+        body {
+            background: rgb(58, 91, 92);
+            color:rgb(242, 236, 245);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>AQUI VAI O RESULTADO</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS.</p>
+    <div id="msg">clique em mim</div>
+    <script>
+         //ou (segundo) -> var corpon = window.document.body
+        //var p1 = window.document.getElementsByTagName('p')[0] // o 0 seria o primeiro, o 1 seria o segundo.
+        //window.document.write('esta escrito assim ' + p1.innerText); // innertex é o texto q esta no 1 paragra //(window.document.URL);
+        //(continuação do ou segundo) corpo.style.backgroud = 'black' vai mudar o fundo
+        //ou (primero) -> p1.style.color = 'pink'; vai mudar a cor do primeiro paragra
+        //window.alert(p1.innerText); janela de alerta
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+        
+        //var d = window.docment.querySelector('div#msg')
+        d.style.background = 'blue'
+    </script>
+    
+</body>
+</html>

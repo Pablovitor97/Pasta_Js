@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu primeiro programa. </title>
+    <style>
+        body {
+            background-color:cadetblue;
+            color: black; /* isso é um comentario em CSS */
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+  <h1>olá, mundo!</h1> <!--isso é um comentario em HTML--> 
+  <p> Estou aprendendo JavaScript</p>
+  <script>
+      var n1 = Number(window.prompt('Digite um numero: ')) // o prompt devolve como string // cloquei number.parsInt para converter em numero inteiro
+      var n2 = Number(window.prompt('Digite outro numero: ')) // esse tambem // voce tem q saber qual é o tipo
+      var soma = n1 + n2
+      window.alert('A soma dos valores é '+ String(soma))//ou + soma ...// Concatenação
+      // (number + number) para adição
+      //(string + string) para concatenação
+  </script>
+</body>
+</html>

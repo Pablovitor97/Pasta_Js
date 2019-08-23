@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{  /* classe*/
+            font: normal 18pt Arial;
+            background: rgb(226, 155, 167);
+            color: black;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;  /* mesma altura*/
+            text-align: center; /* a palavra vai ficar no centro */
+        
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        INTERAJA...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area') /*escopo global, serv p as 3 functions*/
+        a.addEventListener('click', clicar) /*eventlistenner vai pretsra atencao em um determindo elemento*/
+        a.addEventListener('mouseenter', entrar) /*os 3 sao metodos*/
+        a.addEventListener('mouseout', sair)
+
+        /*bloco.. -v acoes(ex: clicar)*/
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'brown'
+
+        }
+        function entrar() {
+            a.innerText = 'Entrou'
+            a.style.background = 'red'
+        }
+        function sair() {
+            a.innerText ='Saiu!'
+            a.style.background = 'gray'
+
+        }
+    </script>
+</body>
+</html>
